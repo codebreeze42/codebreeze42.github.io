@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello Hexo</title>
+      <link href="/2025/05/27/Hello-Hexo/"/>
+      <url>/2025/05/27/Hello-Hexo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/05/27/hello-world/"/>
+      <url>/2025/05/27/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p><img src="https://gitee.com/techstream/mypicture/raw/master/img/20250526211926165.png"></p><p><strong>Flynn对体系结构的分类：</strong><br>单指令流单数据流（SISD），单指令流多数据流（SIMD），多指令单数据流（MISD），多指令多数据流（MIMD）<br><img src="https://gitee.com/techstream/mypicture/raw/master/img/20250526212426105.png"></p><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">addTwoNumbers</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> carry=<span class="number">0</span>;<span class="comment">//进位</span></span><br><span class="line">        ListNode* head=<span class="keyword">new</span> <span class="built_in">ListNode</span>();</span><br><span class="line">        ListNode* p1=head;</span><br><span class="line">        <span class="keyword">while</span>(l1!=<span class="literal">nullptr</span>||l2!=<span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="type">int</span> num1=(l1==<span class="literal">nullptr</span>)?<span class="number">0</span>:l1-&gt;val;</span><br><span class="line">            <span class="type">int</span> num2=(l2==<span class="literal">nullptr</span>)?<span class="number">0</span>:l2-&gt;val;</span><br><span class="line">            <span class="type">int</span> sum=num1+num2+carry;<span class="comment">//计算每一位的和</span></span><br><span class="line">            carry=sum/<span class="number">10</span>;<span class="comment">//更高一位的进位</span></span><br><span class="line">            p1-&gt;next=<span class="keyword">new</span> <span class="built_in">ListNode</span>(sum%<span class="number">10</span>);</span><br><span class="line">            p1=p1-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(l1!=<span class="literal">nullptr</span>) l1=l1-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(l2!=<span class="literal">nullptr</span>) l2=l2-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//两数相加有进位</span></span><br><span class="line">        <span class="keyword">if</span>(carry!=<span class="number">0</span>) p1-&gt;next=<span class="keyword">new</span> <span class="built_in">ListNode</span>(carry);</span><br><span class="line">        <span class="keyword">return</span> head-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
