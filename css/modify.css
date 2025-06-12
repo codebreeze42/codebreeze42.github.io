@@ -73,3 +73,6 @@ body {
 [data-theme='dark'] #footer-wrap a {
   color: var(--light-grey);
 }
+.site-footer {
+  background-color: transparent !important;
+}
